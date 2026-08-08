@@ -9,17 +9,13 @@
 :root {
     --blue: #1677ff;
     --blue-light: #2d8cff;
-    --blue-dark: #0754c9;
 
     --black: #030507;
-    --black-2: #070b12;
-
     --text: #ffffff;
     --muted: #858c98;
 
-    --border: rgba(255, 255, 255, 0.08);
-
-    --card: rgba(10, 14, 22, 0.78);
+    --border: rgba(255,255,255,0.08);
+    --card: rgba(10,14,22,0.78);
 }
 
 html {
@@ -39,9 +35,7 @@ body {
 }
 
 
-/* =========================================
-   FUNDO
-========================================= */
+/* FUNDO */
 
 .background {
     position: fixed;
@@ -53,12 +47,12 @@ body {
     background:
         radial-gradient(
             circle at 50% 45%,
-            rgba(22, 119, 255, 0.16),
+            rgba(22,119,255,0.16),
             transparent 34%
         ),
         radial-gradient(
             circle at 85% 15%,
-            rgba(22, 119, 255, 0.08),
+            rgba(22,119,255,0.08),
             transparent 30%
         ),
         linear-gradient(
@@ -69,9 +63,6 @@ body {
         );
 }
 
-
-/* GRID */
-
 .background::before {
     content: "";
 
@@ -81,12 +72,12 @@ body {
 
     background-image:
         linear-gradient(
-            rgba(255, 255, 255, 0.025) 1px,
+            rgba(255,255,255,0.025) 1px,
             transparent 1px
         ),
         linear-gradient(
             90deg,
-            rgba(255, 255, 255, 0.025) 1px,
+            rgba(255,255,255,0.025) 1px,
             transparent 1px
         );
 
@@ -94,13 +85,10 @@ body {
 
     mask-image: linear-gradient(
         to bottom,
-        black 0%,
+        black,
         transparent 85%
     );
 }
-
-
-/* CÍRCULO CENTRAL */
 
 .background::after {
     content: "";
@@ -117,17 +105,15 @@ body {
 
     border-radius: 50%;
 
-    border: 1px solid rgba(22, 119, 255, 0.08);
+    border: 1px solid rgba(22,119,255,0.08);
 
     box-shadow:
-        0 0 100px rgba(22, 119, 255, 0.05),
-        inset 0 0 100px rgba(22, 119, 255, 0.03);
+        0 0 100px rgba(22,119,255,0.05),
+        inset 0 0 100px rgba(22,119,255,0.03);
 }
 
 
-/* =========================================
-   HEADER
-========================================= */
+/* HEADER */
 
 .topbar {
     width: 100%;
@@ -145,9 +131,6 @@ body {
     justify-content: space-between;
 }
 
-
-/* LOGO + NOME */
-
 .brand {
     display: flex;
 
@@ -157,11 +140,11 @@ body {
 }
 
 
-/* QUADRADO DA LOGO */
+/* LOGO */
 
 .brand-mark {
-    width: 43px;
-    height: 43px;
+    width: 48px;
+    height: 48px;
 
     flex-shrink: 0;
 
@@ -175,16 +158,13 @@ body {
 
     border-radius: 10px;
 
-    background: rgba(255, 255, 255, 0.035);
+    background: rgba(255,255,255,0.035);
 
-    border: 1px solid rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255,255,255,0.10);
 
     box-shadow:
-        0 0 25px rgba(22, 119, 255, 0.12);
+        0 0 25px rgba(22,119,255,0.15);
 }
-
-
-/* IMAGEM */
 
 .brand-mark img {
     width: 100%;
@@ -211,9 +191,6 @@ body {
 
     letter-spacing: 1.8px;
 }
-
-
-/* SUBTÍTULO */
 
 .brand-text span {
     display: block;
@@ -243,9 +220,9 @@ body {
 
     border-radius: 100px;
 
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255,255,255,0.08);
 
-    background: rgba(255, 255, 255, 0.025);
+    background: rgba(255,255,255,0.025);
 
     color: #737a86;
 
@@ -255,7 +232,6 @@ body {
 
     letter-spacing: 1px;
 }
-
 
 .status-dot {
     width: 6px;
@@ -270,9 +246,7 @@ body {
 }
 
 
-/* =========================================
-   MAIN
-========================================= */
+/* MAIN */
 
 main {
     min-height: calc(100vh - 150px);
@@ -286,7 +260,6 @@ main {
     padding: 55px 25px 100px;
 }
 
-
 .hero {
     width: 100%;
 
@@ -298,9 +271,7 @@ main {
 }
 
 
-/* =========================================
-   BADGE
-========================================= */
+/* BADGE */
 
 .badge {
     display: inline-flex;
@@ -313,9 +284,9 @@ main {
 
     border-radius: 100px;
 
-    border: 1px solid rgba(22, 119, 255, 0.28);
+    border: 1px solid rgba(22,119,255,0.28);
 
-    background: rgba(22, 119, 255, 0.07);
+    background: rgba(22,119,255,0.07);
 
     color: #c4cbd5;
 
@@ -326,26 +297,19 @@ main {
     letter-spacing: 1.8px;
 }
 
-
 .badge span {
     color: var(--blue);
 }
 
 
-/* =========================================
-   TÍTULO
-========================================= */
+/* TÍTULO */
 
 h1 {
     margin-top: 25px;
 
     color: #ffffff;
 
-    font-size: clamp(
-        45px,
-        6vw,
-        76px
-    );
+    font-size: clamp(45px,6vw,76px);
 
     line-height: 1.02;
 
@@ -354,18 +318,15 @@ h1 {
     font-weight: 900;
 }
 
-
 h1 span {
     color: var(--blue);
 
     text-shadow:
-        0 0 35px rgba(22, 119, 255, 0.20);
+        0 0 35px rgba(22,119,255,0.20);
 }
 
 
-/* =========================================
-   DESCRIÇÃO
-========================================= */
+/* DESCRIÇÃO */
 
 .description {
     max-width: 620px;
@@ -380,9 +341,7 @@ h1 span {
 }
 
 
-/* =========================================
-   AVISO
-========================================= */
+/* AVISO */
 
 .notice {
     margin-top: 45px;
@@ -404,20 +363,16 @@ h1 span {
     backdrop-filter: blur(20px);
 
     box-shadow:
-        0 20px 80px rgba(0, 0, 0, 0.30);
+        0 20px 80px rgba(0,0,0,0.30);
 
     transition: 0.3s ease;
 }
 
-
 .notice:hover {
     transform: translateY(-2px);
 
-    border-color: rgba(22, 119, 255, 0.24);
+    border-color: rgba(22,119,255,0.24);
 }
-
-
-/* ÍCONE */
 
 .notice-icon {
     width: 40px;
@@ -439,13 +394,10 @@ h1 span {
 
     font-weight: 900;
 
-    background: rgba(22, 119, 255, 0.09);
+    background: rgba(22,119,255,0.09);
 
-    border: 1px solid rgba(22, 119, 255, 0.25);
+    border: 1px solid rgba(22,119,255,0.25);
 }
-
-
-/* TÍTULO */
 
 .notice h2 {
     margin-bottom: 9px;
@@ -456,9 +408,6 @@ h1 span {
 
     font-weight: 800;
 }
-
-
-/* TEXTO */
 
 .notice p {
     margin-top: 7px;
@@ -471,20 +420,17 @@ h1 span {
 }
 
 
-/* =========================================
-   INFORMAÇÕES
-========================================= */
+/* INFORMAÇÕES */
 
 .legal {
     margin-top: 18px;
 
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
 
     gap: 10px;
 }
-
 
 .legal-item {
     padding: 17px;
@@ -493,11 +439,10 @@ h1 span {
 
     border-radius: 12px;
 
-    background: rgba(255, 255, 255, 0.025);
+    background: rgba(255,255,255,0.025);
 
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255,255,255,0.06);
 }
-
 
 .label {
     display: block;
@@ -513,7 +458,6 @@ h1 span {
     letter-spacing: 1.5px;
 }
 
-
 .value {
     color: #a1a6ae;
 
@@ -521,18 +465,15 @@ h1 span {
 
     font-weight: 700;
 
-    letter-spacing: 0.5px;
+    letter-spacing: .5px;
 }
-
 
 .value.blue {
     color: var(--blue);
 }
 
 
-/* =========================================
-   BOTÃO
-========================================= */
+/* BOTÃO */
 
 .button {
     margin-top: 29px;
@@ -561,9 +502,8 @@ h1 span {
 
     letter-spacing: 1px;
 
-    transition: 0.25s ease;
+    transition: .25s ease;
 }
-
 
 .button:hover {
     transform: translateY(-3px);
@@ -573,18 +513,15 @@ h1 span {
     color: #ffffff;
 
     box-shadow:
-        0 15px 35px rgba(22, 119, 255, 0.25);
+        0 15px 35px rgba(22,119,255,0.25);
 }
-
 
 .arrow {
     font-size: 15px;
 }
 
 
-/* =========================================
-   FOOTER
-========================================= */
+/* FOOTER */
 
 footer {
     position: fixed;
@@ -601,9 +538,9 @@ footer {
 
     padding: 17px 35px;
 
-    background: rgba(2, 4, 7, 0.80);
+    background: rgba(2,4,7,0.80);
 
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
 
     backdrop-filter: blur(15px);
 
@@ -616,15 +553,12 @@ footer {
     letter-spacing: 1px;
 }
 
-
 .footer-right {
     color: #343a43;
 }
 
 
-/* =========================================
-   TOAST
-========================================= */
+/* TOAST */
 
 .toast {
     position: fixed;
@@ -646,21 +580,19 @@ footer {
 
     background: #10151d;
 
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255,255,255,0.08);
 
     box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.4);
+        0 20px 50px rgba(0,0,0,0.4);
 
     transform: translateX(150%);
 
-    transition: 0.4s ease;
+    transition: .4s ease;
 }
-
 
 .toast.show {
     transform: translateX(0);
 }
-
 
 .toast-icon {
     width: 28px;
@@ -676,9 +608,8 @@ footer {
 
     color: var(--blue);
 
-    background: rgba(22, 119, 255, 0.10);
+    background: rgba(22,119,255,0.10);
 }
-
 
 .toast strong {
     display: block;
@@ -687,7 +618,6 @@ footer {
 
     font-size: 10px;
 }
-
 
 .toast span {
     display: block;
@@ -700,9 +630,7 @@ footer {
 }
 
 
-/* =========================================
-   ANIMAÇÃO
-========================================= */
+/* ANIMAÇÃO */
 
 @keyframes fadeUp {
 
@@ -721,27 +649,21 @@ footer {
 }
 
 
-/* =========================================
-   RESPONSIVO
-========================================= */
+/* CELULAR */
 
-@media (max-width: 700px) {
+@media (max-width:700px) {
 
     .topbar {
         padding: 22px 18px;
     }
 
-
     .status {
         display: none;
     }
 
-
     main {
-        padding:
-            40px 18px 100px;
+        padding: 40px 18px 100px;
     }
-
 
     h1 {
         font-size: 43px;
@@ -749,36 +671,29 @@ footer {
         letter-spacing: -2px;
     }
 
-
     .description {
         font-size: 12px;
     }
-
 
     .notice {
         padding: 18px;
     }
 
-
     .notice p {
         font-size: 10px;
     }
-
 
     .legal {
         grid-template-columns: 1fr;
     }
 
-
     footer {
         padding: 15px 18px;
     }
 
-
     .footer-right {
         display: none;
     }
-
 
     .toast {
         left: 18px;
