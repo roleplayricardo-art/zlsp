@@ -1,132 +1,312 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Zona Leste — Temporariamente Fechada</title>
-    <meta name="description" content="Comunicado oficial da Zona Leste. Projeto temporariamente fechado.">
+
+    <meta
+        name="description"
+        content="Comunicado oficial da Zona Leste. Projeto temporariamente fechado."
+    >
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- FUNDO -->
     <div class="background"></div>
 
+    <!-- TOPO -->
     <header class="topbar">
+
         <div class="brand">
-            <div class="brand-mark">ZL</div>
 
-            <div>
-                <strong>ZONA LESTE</strong>
-                <span>COMUNICADO OFICIAL</span>
+            <!--
+                LOGO DA CIDADE
+
+                TROQUE:
+                COLE_AQUI_O_LINK_DA_IMAGEM
+
+                POR EXEMPLO:
+                https://seusite.com/logo.png
+            -->
+
+            <div class="brand-mark">
+
+                <img
+                    src="COLE_AQUI_O_LINK_DA_IMAGEM"
+                    alt="Logo da Zona Leste"
+                >
+
             </div>
+
+            <div class="brand-text">
+
+                <strong>ZONA LESTE</strong>
+
+                <span>COMUNICADO OFICIAL</span>
+
+            </div>
+
         </div>
 
+        <!-- STATUS -->
         <div class="status">
+
             <span class="status-dot"></span>
+
             TEMPORARIAMENTE FECHADA
+
         </div>
+
     </header>
 
+
+    <!-- CONTEÚDO PRINCIPAL -->
     <main>
 
         <section class="hero">
 
+            <!-- BADGE -->
             <div class="badge">
+
                 <span>●</span>
+
                 AVISO OFICIAL
+
             </div>
 
+
+            <!-- TÍTULO -->
             <h1>
+
                 A <span>Zona Leste</span><br>
+
                 está temporariamente fechada.
+
             </h1>
 
+
+            <!-- DESCRIÇÃO -->
             <p class="description">
+
                 No momento, o projeto encontra-se temporariamente fechado
                 para manutenção, reorganização e futuros ajustes.
 
-                ASS: CEO | RD26 
+                ASS: FOUNDER RD
+
             </p>
 
+
+            <!-- AVISO JURÍDICO -->
             <div class="notice">
 
-                <div class="notice-icon">!</div>
+                <div class="notice-icon">
 
-                <div>
-                    <h2>Comunicado sobre a marca</h2>
+                    !
+
+                </div>
+
+
+                <div class="notice-content">
+
+                    <h2>
+
+                        Comunicado sobre a marca
+
+                    </h2>
+
 
                     <p>
-                        A identidade visual, nome, elementos gráficos, materiais
-                        e demais elementos relacionados à Zona Leste pertencem
-                        aos respectivos titulares do projeto, observados os
-                        direitos aplicáveis.
+
+                        A identidade visual, nome, elementos gráficos,
+                        materiais e demais elementos relacionados à
+                        Zona Leste pertencem aos respectivos titulares
+                        do projeto, observados os direitos aplicáveis.
+
                     </p>
 
+
                     <p>
+
                         A utilização, reprodução, modificação ou associação
-                        indevida desses elementos por terceiros, especialmente
-                        com finalidade de se passar pelo projeto oficial,
-                        poderá resultar na adoção das medidas administrativas
-                        e judiciais cabíveis, conforme a legislação aplicável.
+                        indevida desses elementos por terceiros,
+                        especialmente com finalidade de se passar pelo
+                        projeto oficial, poderá resultar na adoção das
+                        medidas administrativas e judiciais cabíveis,
+                        conforme a legislação aplicável.
+
                     </p>
+
                 </div>
 
             </div>
 
+
+            <!-- INFORMAÇÕES -->
             <div class="legal">
 
+
+                <!-- CNPJ -->
                 <div class="legal-item">
-                    <span class="label">TITULARIDADE / CNPJ</span>
-                    <span class="value">INFORMAÇÃO RESERVADA</span>
+
+                    <span class="label">
+
+                        TITULARIDADE / CNPJ
+
+                    </span>
+
+                    <span class="value">
+
+                        INFORMAÇÃO RESERVADA
+
+                    </span>
+
                 </div>
 
+
+                <!-- STATUS -->
                 <div class="legal-item">
-                    <span class="label">STATUS</span>
-                    <span class="value red">TEMPORARIAMENTE FECHADA</span>
+
+                    <span class="label">
+
+                        STATUS
+
+                    </span>
+
+                    <span class="value red">
+
+                        TEMPORARIAMENTE FECHADA
+
+                    </span>
+
                 </div>
 
+
+                <!-- DATA -->
                 <div class="legal-item">
-                    <span class="label">ATUALIZAÇÃO</span>
-                    <span class="value" id="date"></span>
+
+                    <span class="label">
+
+                        ATUALIZAÇÃO
+
+                    </span>
+
+                    <span
+                        class="value"
+                        id="date"
+                    >
+                    </span>
+
                 </div>
+
 
             </div>
 
-            <button class="button" id="understood">
-                <span>ENTENDI O COMUNICADO</span>
-                <span class="arrow">→</span>
+
+            <!-- BOTÃO -->
+            <button
+                class="button"
+                id="understood"
+            >
+
+                <span>
+
+                    ENTENDI O COMUNICADO
+
+                </span>
+
+                <span class="arrow">
+
+                    →
+
+                </span>
+
             </button>
+
 
         </section>
 
     </main>
 
+
+    <!-- RODAPÉ -->
     <footer>
 
         <div>
-            © <span id="year"></span> Zona Leste.
+
+            © <span id="year"></span>
+            Zona Leste.
             Todos os direitos reservados.
+
         </div>
 
+
         <div class="footer-right">
+
             COMUNICADO OFICIAL
+
         </div>
 
     </footer>
 
-    <div class="toast" id="toast">
-        <div class="toast-icon">✓</div>
+
+    <!-- NOTIFICAÇÃO -->
+    <div
+        class="toast"
+        id="toast"
+    >
+
+        <div class="toast-icon">
+
+            ✓
+
+        </div>
+
 
         <div>
-            <strong>Comunicado registrado</strong>
-            <span>Obrigado por consultar a página oficial.</span>
+
+            <strong>
+
+                Comunicado registrado
+
+            </strong>
+
+            <span>
+
+                Obrigado por consultar a página oficial.
+
+            </span>
+
         </div>
+
     </div>
 
+
+    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
+
 </html>
+```
+
+**Para colocar sua imagem**, altere somente esta linha:
+
+```html
+src="https://imgur.com/a/LNmrqTf"
+```
+
+Por exemplo:
+
+```html
+src="https://imgur.com/a/LNmrqTf"
+```
+
+O CSS que te passei anteriormente já está preparado para essa imagem e vai manter ela centralizada dentro do quadrado.
