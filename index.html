@@ -19,65 +19,70 @@
 
     <div class="background"></div>
 
-    <!-- HEADER -->
     <header class="topbar">
 
         <div class="brand">
 
-            <!--
-                COLOQUE A URL DIRETA DA SUA LOGO AQUI.
-
-                Exemplo:
-                https://seusite.com/logo.png
-
-                OU, se colocar logo.png na mesma pasta:
-                logo.png
-            -->
             <div class="brand-mark">
                 <img
-                    src="https://imgur.com/znHqVXH"
+                    src="logo.png"
                     alt="Logo Zona Leste"
                 >
             </div>
 
             <div class="brand-text">
+
                 <strong>ZONA LESTE</strong>
+
                 <span>COMUNICADO OFICIAL</span>
+
             </div>
 
         </div>
 
         <div class="status">
+
             <span class="status-dot"></span>
+
             TEMPORARIAMENTE FECHADA
+
         </div>
 
     </header>
 
 
-    <!-- CONTEÚDO -->
     <main>
 
         <section class="hero">
 
             <div class="badge">
+
                 <span>●</span>
+
                 AVISO OFICIAL
+
             </div>
 
+
             <h1>
+
                 A <span>Zona Leste</span><br>
+
                 está temporariamente<br>
+
                 fechada.
+
             </h1>
 
+
             <p class="description">
+
                 No momento, o projeto encontra-se temporariamente fechado
                 para manutenção, reorganização e futuros ajustes.
+
             </p>
 
 
-            <!-- COMUNICADO -->
             <div class="notice">
 
                 <div class="notice-icon">
@@ -110,7 +115,6 @@
             </div>
 
 
-            <!-- INFORMAÇÕES -->
             <div class="legal">
 
                 <div class="legal-item">
@@ -155,7 +159,6 @@
             </div>
 
 
-            <!-- BOTÃO -->
             <button
                 class="button"
                 id="understood"
@@ -176,22 +179,24 @@
     </main>
 
 
-    <!-- FOOTER -->
     <footer>
 
         <div>
-            © <span id="year"></span> Zona Leste.
-            Todos os direitos reservados.
+
+            © <span id="year"></span>
+            Zona Leste. Todos os direitos reservados.
+
         </div>
 
         <div class="footer-right">
+
             COMUNICADO OFICIAL
+
         </div>
 
     </footer>
 
 
-    <!-- TOAST -->
     <div
         class="toast"
         id="toast"
@@ -202,6 +207,7 @@
         </div>
 
         <div>
+
             <strong>
                 Comunicado registrado
             </strong>
@@ -209,6 +215,7 @@
             <span>
                 Obrigado por consultar a página oficial.
             </span>
+
         </div>
 
     </div>
@@ -218,16 +225,18 @@
 
         const dateElement = document.getElementById("date");
         const yearElement = document.getElementById("year");
+
         const button = document.getElementById("understood");
         const toast = document.getElementById("toast");
 
         const now = new Date();
 
-        dateElement.textContent = now.toLocaleDateString("pt-BR", {
-            day: "2-digit",
-            month: "2-digit",
-            year: "numeric"
-        });
+        dateElement.textContent =
+            now.toLocaleDateString("pt-BR", {
+                day: "2-digit",
+                month: "2-digit",
+                year: "numeric"
+            });
 
         yearElement.textContent = now.getFullYear();
 
@@ -236,7 +245,9 @@
             toast.classList.add("show");
 
             setTimeout(() => {
+
                 toast.classList.remove("show");
+
             }, 3500);
 
         });
